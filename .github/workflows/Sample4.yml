@@ -1,20 +1,19 @@
-name : Custom Environment Variables 
+name: Custom Environment Variables
 
 on:
   schedule:
     - cron: '*/1 * * * *'
 
-env : 
-  SUBSCRIBE : Subscribe 
+env:
+  SUBSCRIBE: Subscribe
 
-jobs :
-    subscribe_my_channel :
-        runs-on : ubuntu-latest
-        env : 
-            LIKE : Please like and share 
-        steps :
-            - name : Print Environment Variables
-              run : echo "$LIKE and $SUBSCRIBE to my $CHANNEL_NAME channel"
-
-              env :
-                CHANNEL_NAME : Tavant Bangalore India
+jobs:
+  subscribe_my_channel:
+    runs-on: ubuntu-latest
+    env:
+      LIKE: Please like and share
+    steps:
+      - name: Print Environment Variables
+        run: echo "$LIKE and $SUBSCRIBE to my $CHANNEL_NAME channel"
+        env:
+          CHANNEL_NAME: Tavant Bangalore India
