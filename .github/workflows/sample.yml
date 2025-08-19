@@ -1,0 +1,20 @@
+- name : Directort Bash
+       run : pwd
+       shell : bash
+
+     - name: string
+       run: echo "Hello, World! - Tavant India "
+
+     - name: multiline script
+       run: |
+         node -v 
+         npm -v 
+         echo "This is a multiline script"
+     
+     - name : python command
+       run : |
+         import platform 
+         print("Python version:", platform.python_version())
+         print("Platform:", platform.system(), platform.release())
+         print("platform processor" , platform.processor())
+       shell : python
