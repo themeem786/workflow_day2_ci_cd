@@ -1,8 +1,6 @@
 name: Custom Environment Variables
 
-on:
-  schedule:
-    - cron: '*/1 * * * *'
+on : push
 
 env:
   SUBSCRIBE: Subscribe
